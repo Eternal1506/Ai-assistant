@@ -1,8 +1,5 @@
 // ─── CONFIG ────────────────────────────────────────────────────────────────────
-// Replace with your real Anthropic API key.
-// WARNING: In a real app, NEVER expose your API key in frontend JS.
-// Route calls through your own backend server instead.
-const ANTHROPIC_API_KEY = 'YOUR_ANTHROPIC_API_KEY_HERE';
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY 
 
 const GMAIL_MCP_URL  = 'https://gmail.mcp.claude.com/mcp';
 const GCAL_MCP_URL   = 'https://gcal.mcp.claude.com/mcp';
